@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Vasant Krishi Kendra — premium digital storefront for seeds, fertilizers, crop protection, farm tools and irrigation supplies.">
+<title>Vasant Krishi Kendra | Farm Essentials</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-symbol">VK</div><strong>VASANT KRISHI KENDRA</strong><span>FARM ESSENTIALS • ONLINE</span></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#home"><span class="logo-mark">VK</span><span><b>VASANT</b><small>KRISHI KENDRA</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="#home">Home</a><a href="#shop">Store</a><a href="#smart">Smart Farm</a><a href="#legacy">Legacy</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" id="cartOpenBtn">Cart <i id="cartCount">0</i></button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-noise"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="hero-copy reveal">
+    <span class="eyebrow">VASANT KRISHI KENDRA / DIGITAL STORE</span>
+    <h1>Farm essentials,<br><em>beautifully simple.</em></h1>
+    <p>Seeds, fertilizers, crop protection, irrigation and farm tools — discover what you need online, then connect directly with our shop.</p>
+    <div class="actions"><a class="btn primary" href="#shop">Explore store <span>↗</span></a><a class="btn light" href="https://wa.me/918308334465?text=Namaste%20Vasant%20Krishi%20Kendra%2C%20I%20want%20to%20know%20about%20your%20products." target="_blank" rel="noopener">WhatsApp us</a></div>
+    <div class="trust"><span>01 / Local shop</span><span>02 / Direct ordering</span><span>03 / Farmer focused</span></div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="hero-image-wrap">
+      <div class="hero-image"><div class="hero-image-overlay"></div><div class="hero-badge"><span>FIELD READY</span><b>Seeds → Nutrition → Protection</b></div></div>
+    </div>
+    <div class="float-card float-one"><span class="mini-dot"></span><div><b>Online ordering</b><small>Direct on WhatsApp</small></div></div>
+    <div class="float-card float-two"><span class="tiny-label">VK</span><div><b>Farm essentials</b><small>One place. Clear choices.</small></div></div>
+  </div>
+</section>
+
+<section class="marquee"><div>SEEDS <i>✦</i> FERTILIZERS <i>✦</i> CROP PROTECTION <i>✦</i> FARM TOOLS <i>✦</i> IRRIGATION <i>✦</i> SEEDS <i>✦</i> FERTILIZERS <i>✦</i></div></section>
+
+<section class="section" id="shop">
+  <div class="section-head reveal"><div><span class="eyebrow">01 / ONLINE STORE</span><h2>Shop by<br><em>what you need.</em></h2></div><p>Search products, choose a category, build your list and send it to Vasant Krishi Kendra on WhatsApp.</p></div>
+  <div class="category-wrap reveal" id="catStrip"></div>
+  <div class="shop-toolbar reveal"><div class="search"><span>⌕</span><input id="searchInput" placeholder="Search seeds, urea, sprayer, neem oil..."></div><button class="filter-btn" id="allFilter">All products</button></div>
+  <div class="products" id="products"></div>
+</section>
+
+<section class="section smart" id="smart">
+  <div class="section-head reveal"><div><span class="eyebrow">02 / SMART FARM</span><h2>Your digital<br><em>farm desk.</em></h2></div><p>Useful planning tools sit beside the store, keeping the experience practical without replacing product labels or qualified agricultural advice.</p></div>
+  <div class="smart-grid">
+    <article class="smart-card large reveal"><div class="smart-icon">◌</div><span>FARM ASSISTANT</span><h3>Tell us what your crop needs.</h3><p>Share your crop, visible issue and area. We'll prepare a clear WhatsApp request for the shop team.</p><button class="mini-btn" data-open-assistant>Open assistant ↗</button><div class="assistant-lines"><span>Crop / Cotton</span><span>Issue / Yellow leaves</span><span>Area / 2 acres</span></div></article>
+    <article class="smart-card reveal"><div class="smart-icon">⌁</div><span>CROP SCANNER</span><h3>Start with a leaf photo.</h3><p>Use this interface to send a crop image request for further discussion with the shop team.</p><button class="mini-btn" data-open-assistant>Try scanner ↗</button></article>
+    <article class="smart-card reveal"><div class="smart-icon">＋</div><span>FARM CALCULATOR</span><h3>Area planning.</h3><p>Convert acres to hectares for a quick planning estimate.</p><button class="mini-btn" id="calcBtn">Open calculator ↗</button></article>
+  </div>
+</section>
+
+<section class="stats section">
+  <div class="stat reveal"><strong data-count="5">0</strong><span>Product categories</span></div>
+  <div class="stat reveal"><strong data-count="22">0</strong><span>Store products</span></div>
+  <div class="stat reveal"><strong>2</strong><span>Direct contact numbers</span></div>
+  <div class="stat reveal"><strong>01</strong><span>Local digital storefront</span></div>
+</section>
+
+<section class="section legacy" id="legacy">
+  <div class="legacy-card reveal">
+    <div class="legacy-image"><img src="https://vnvjntdc.org/assets/images/Untitled%20design%20%281%29.png" alt="Portrait of Vasantrao Naik" loading="lazy"><span>AGRICULTURE • MAHARASHTRA</span></div>
+    <div class="legacy-copy"><span class="eyebrow">03 / INSPIRATION</span><h2>Vasantrao<br><em>Naik.</em></h2><p class="lead">A name deeply associated with Maharashtra's agricultural and rural development story.</p><p>We use this profile as a visual tribute to the agricultural identity behind the name of our store.</p><div class="legacy-note"><span>VK</span><div><b>Vasant Krishi Kendra</b><small>आपके खेत का साथी • Your farm companion</small></div></div></div>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="section-head reveal"><div><span class="eyebrow">04 / WHY VASANT</span><h2>Offline trust.<br><em>Online convenience.</em></h2></div><p>Our digital storefront helps farmers discover products before they reach the counter.</p></div>
+  <div class="values"><article class="value reveal"><span>01</span><h3>Clear product discovery</h3><p>Browse seeds, fertilizers, crop-protection products, tools and irrigation supplies in one place.</p></article><article class="value reveal"><span>02</span><h3>Human guidance</h3><p>Online information supports the conversation — product labels and qualified agricultural advice remain important.</p></article><article class="value reveal"><span>03</span><h3>Direct ordering</h3><p>Build your list online and send it to the shop through WhatsApp before visiting.</p></article></div>
+</section>
+
+<section class="section notice">
+  <div class="notice-copy reveal"><span class="eyebrow">FIELD NOTES</span><h2>Good planning<br><em>starts early.</em></h2><p>Keep soil testing, product labels, crop stage and local conditions in mind before using farm inputs.</p></div>
+  <div class="notes reveal"><div><b>01 / Before sowing</b><p>Choose seed suited to the crop, season and local conditions.</p></div><div><b>02 / Before application</b><p>Read the product label and follow its crop-specific instructions.</p></div><div><b>03 / Before irrigation</b><p>Check soil moisture and crop stage instead of irrigating by habit.</p></div></div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="contact-panel reveal">
+    <div><span class="eyebrow">05 / VISIT THE KENDRA</span><h2>Let's make your next<br><em>farm visit easier.</em></h2><p>Send your requirement first. We'll connect with you through WhatsApp.</p><div class="phones"><a href="tel:+918308334465">+91 83083 34465</a><a href="tel:+919921171741">+91 99211 71741</a></div><p class="address">Manora Chowk, Digras, Babusingh Naik Complex, Dist. Yavatmal, Maharashtra</p></div>
+    <form id="contactForm"><label>Name<input id="cName" required placeholder="Your name"></label><label>Phone<input id="cPhone" required inputmode="numeric" placeholder="10-digit number"></label><label>Requirement<textarea id="cMsg" required placeholder="What do you need?"></textarea></label><button class="btn primary" type="submit">Send on WhatsApp ↗</button></form>
+  </div>
+</section>
+</main>
+
+<footer><div><b>VASANT KRISHI KENDRA</b><span>आपके खेत का साथी • Farm Inputs & Advice</span></div><p>© <span id="year"></span> Vasant Krishi Kendra</p></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer"><div class="drawer-head"><div><span class="eyebrow">YOUR LIST</span><h3>Shopping cart</h3></div><button id="closeDrawer">✕</button></div><div id="drawerBody" class="drawer-body"></div><div class="drawer-foot"><div class="total"><span>Estimated total</span><b id="cartTotal">₹0</b></div><a class="wa-btn" id="waOrderBtn" target="_blank" rel="noopener">WhatsApp order ↗</a><button class="clear-btn" id="clearCartBtn">Clear list</button></div></aside>
+
+<div class="modal" id="assistantModal"><div class="modal-box"><button class="modal-close" data-close-modal>✕</button><span class="eyebrow">SMART FARM TOOL</span><h2>Farm Assistant</h2><p>Fill the form and send a structured request to the shop team.</p><label>Crop<input id="aCrop" placeholder="e.g. Cotton"></label><label>Problem<input id="aProblem" placeholder="e.g. Leaf spots"></label><label>Area<input id="aArea" placeholder="e.g. 2 acres"></label><button class="btn primary" id="assistantSend">Send request ↗</button></div></div>
+<div class="modal" id="calcModal"><div class="modal-box"><button class="modal-close" data-close-modal>✕</button><span class="eyebrow">QUICK CALCULATOR</span><h2>Farm area</h2><label>Acres<input id="acres" type="number" min="0" step="0.01" placeholder="0"></label><div class="calc-result"><b id="hectares">0</b><span>hectares</span></div><p class="tiny">1 acre ≈ 0.404686 hectare. Use this as a planning estimate.</p></div></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
